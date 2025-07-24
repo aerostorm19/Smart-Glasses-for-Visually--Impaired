@@ -214,3 +214,6 @@ This project was developed by **Abhijit Rai** as part of a Project-Based Learnin
 Special thanks to the open-source embedded systems community for libraries and reference implementations that accelerated this project.
 
 ---
+> **Note:** This repository was originally developed under my other GitHub account, [abhijitrai1619](https://github.com/abhijitrai1619/Smart-Glasses-for-Visually-Impaired).  
+> It has been forked and maintained here under [aerostorm19](https://github.com/aerostorm19), also my account, purely for organizational and safety purposes.
+
