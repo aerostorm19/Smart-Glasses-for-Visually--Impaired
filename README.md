@@ -49,20 +49,19 @@ It’s designed for learning, experimentation, and extension—building foundati
 
 ## System Architecture
 
-```text
-        ┌────────────┐       I2C       ┌────────────┐
-        │            │  ───────────▶  │            │
-        │  STM32     │                │  ADXL345    │
-        │  F446RE    │  ◀───────────  │  Sensor     │
-        │            │     Data       │            │
-        └─────┬──────┘                └────────────┘
-              │ UART                               
-              ▼                                    
-        ┌────────────┐   MQTT + System Metrics     
-        │  Raspberry │ ─────────────────────────▶  ThingsBoard
-        │    Pi 4B+  │       Visualization & Logging
-        └────────────┘
-```
+The system consists of multiple hardware and software modules integrated for real-time data acquisition, processing, and communication.
+
+### System Block Diagram
+This diagram shows how components like ADXL345, STM32F4, and Raspberry Pi interact across I²C, UART, and MQTT protocols.
+
+![System Block Diagram](Smart-Glasses-for-Visually-Impaired-main\Flow-charts\SystemBlock.png)
+
+### Overall Data Flow
+This flowchart captures the complete signal flow — from sensor input, microcontroller preprocessing, to Raspberry Pi processing and final cloud integration.
+
+![System Flow Diagram](Smart-Glasses-for-Visually-Impaired-main\Flow-charts\System-Block-diargram-and-flow.png)
+
+
 # STM32 + ADXL345 + MQTT + 3D Visualizer
 
 A real-time embedded sensor telemetry project that integrates an ADXL345 accelerometer with an STM32F446RE microcontroller, transmitting motion data to a Raspberry Pi via UART. Data is published to ThingsBoard over MQTT and visualized using a 3D tilt interface built in Processing.
