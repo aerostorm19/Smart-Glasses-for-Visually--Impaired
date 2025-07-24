@@ -58,7 +58,7 @@ This diagram shows how components like ADXL345, STM32F4, and Raspberry Pi intera
 ### Overall Data Flow
 This flowchart captures the complete signal flow — from sensor input, microcontroller preprocessing, to Raspberry Pi processing and final cloud integration.
 
-![System Flow Diagram](Smart-Glasses-for-Visually-Impaired-main/Flow-charts/System-Block-diargram-and-flow.png)
+
 
 
 
