@@ -49,19 +49,18 @@ It’s designed for learning, experimentation, and extension—building foundati
 
 ## System Architecture
 
-```text
-        ┌────────────┐       I2C       ┌────────────┐
-        │            │  ───────────▶  │            │
-        │  STM32     │                │  ADXL345    │
-        │  F446RE    │  ◀───────────  │  Sensor     │
-        │            │     Data       │            │
-        └─────┬──────┘                └────────────┘
-              │ UART                               
-              ▼                                    
-        ┌────────────┐   MQTT + System Metrics     
-        │  Raspberry │ ─────────────────────────▶  ThingsBoard
-        │    Pi 4B+  │       Visualization & Logging
-        └────────────┘
+The system consists of multiple hardware and software modules integrated for real-time data acquisition, processing, and communication.
+
+### System Block Diagram
+This diagram shows how components like ADXL345, STM32F4, and Raspberry Pi interact across I²C, UART, and MQTT protocols.
+
+![System Block Diagram](Flow-charts/SystemBlock.png)
+
+### Overall Data Flow
+This flowchart captures the complete signal flow — from sensor input, microcontroller preprocessing, to Raspberry Pi processing and final cloud integration.
+
+![System Flow Diagram](Flow-charts/System-Block-diargram-and-flow.png)
+
 
 # STM32 + ADXL345 + MQTT + 3D Visualizer
 
