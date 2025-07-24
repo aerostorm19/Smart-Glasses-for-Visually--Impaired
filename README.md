@@ -62,7 +62,7 @@ It’s designed for learning, experimentation, and extension—building foundati
         │  Raspberry │ ─────────────────────────▶  ThingsBoard
         │    Pi 4B+  │       Visualization & Logging
         └────────────┘
-
+```
 # STM32 + ADXL345 + MQTT + 3D Visualizer
 
 A real-time embedded sensor telemetry project that integrates an ADXL345 accelerometer with an STM32F446RE microcontroller, transmitting motion data to a Raspberry Pi via UART. Data is published to ThingsBoard over MQTT and visualized using a 3D tilt interface built in Processing.
