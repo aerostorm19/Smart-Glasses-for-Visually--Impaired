@@ -1,4 +1,4 @@
-# Integrated Data Transmission & Visualization System  
+# Smart-Glasses-for-Visually-Impaired
 ## STM32 Nucleo-F446RE + ADXL345 + Raspberry Pi MQTT Stack  
 **Author:** Abhijit Rai  
 **Institution:** Army Institute of Technology, Pune  
